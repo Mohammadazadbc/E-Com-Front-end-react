@@ -1,13 +1,251 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  
+}
+.logo{
+  width: 100px;
+  height: 85px;
+  position: relative;
+  padding-left: 15px;
+  background-color: transparent;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar{
+  height: 15vh;
+  width: 100%;
+  box-shadow: 1px 1px 5px black;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.nav-bar div input{
+  width: 200%;
+  height: 25px;
+  position: relative;
+  top: 15px;
+  left: -100%;
+
+}
+.home-logo{
+  position: relative;
+  top: 20px;
+  left: -15%;
+}
+.nav-bar div a{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+
+}
+.nav-left{
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.nav-left div{
+  display: flex;
+  align-items: center;
+}
+.nav-left img{
+  width: 20px;
+}
+
+
+.home-body{
+  display: flex;
+  flex-direction: row;
+}
+.home-body div {
+  padding-left: 15px;
+}
+.home-body div p{
+  line-height: 1.5;
+}
+.reg-section{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.reg-container{
+  width: 100%;
+  height: 100vh;
+  box-shadow: 1px 0 5px black;
+  display: flex;
+  flex-direction: column;
+  background-color: #004C91;
+}
+
+.register{
+  position: absolute;
+  width: 450px;
+  height: 350px;
+  display: grid;
+  background-color: #CDCDCD;
+  place-items: center;
+  left: 33%;
+  top: 25%;
+  border-radius: 3px;
+}
+.register h2{
+  color: #186A7F;
+}
+.register .inputs{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.register .inputs input{
+  margin: 5px 0;
+  padding: 10px 0;
+  padding-left: 5px;
+}
+.reg-btns{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reg-btns button{
+  background-color: #186A7F;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.reg-btns button:hover{
+  transform: scale(1.1);
+}
+
+.log-container{
+  width: 100%;
+  height: 100vh;
+  box-shadow: 1px 0 5px black;
+  display: flex;
+  flex-direction: column;
+  background-color: #004C91;
+  
+}
+.log{
+  width: 40%;
+  height: 300px;
+  background-color: rgb(241, 230, 230);
+  position: relative;
+  left: 27%;
+  border-radius: 3px;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.add-user{
+  width: 40%;
+  height: 60px;
+  background-color: rgb(241, 230, 230);
+  left: 27%;
+  position: relative;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.log-input{
+  display: flex;
+  flex-direction: column;
+}
+.log-inputs{
+  width: 90%;
+}
+.log-input input{
+  padding: 10px 0;
+  border: none;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.log-input label{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.log-inputs button{
+  width: 100%;
+  position: relative;
+  top: 25px;
+  padding: 10px 0;
+  background-color: #379216;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.aniaml-img img {
+    width: 350px;
+    margin-top: 2rem;
+}
+.animal-list{
+  display: flex;
+  flex-direction: row;
+}
+.animal-list li{
+  list-style: none;
+ 
+}
+.animal-list .aniaml-desc{
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.animal-list .aniaml-desc li p{
+  line-height: 1.6;
+}
+
+.addaniaml{
+  height: 400px;
+}
+
+.addbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  
+}
+.animal-type{
+  margin-top: 4rem;
+}
+.addbtn img{
+  width: 20px;
+  margin-right: 5px;
+}
+a{
+  text-decoration: none;
+}
+
+
+.edit-delete{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.edit-delete div img{
+  width: 20px;
+  margin: 0 5px;
+  cursor:pointer;
 }
