@@ -32,7 +32,7 @@ const Edite = ({aniamlId}) => {
          <input type="number" value={pr} onChange={(e)=>setPr(e.target.value)}  placeholder="price" /> <br/>
          <input type="text" value={desc}  onChange={(e)=>setDesc(e.target.value)} placeholder="description" /> <br/>
          <input type="text" value={cat} onChange={(e)=>setCat(e.target.value)}   placeholder="catagory" /> <br/>
-         <input type="text" value={imge} onChange={(e)=>setImge(e.target.value)}  placeholder="img" />
+         <input type="text" value={imge} onChange={(e)=>setImge(e.target.value)}  placeholder="Image" />
          <button type="button" onClick={updateDate}>Update</button>
        </div>
     
